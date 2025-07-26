@@ -1,43 +1,29 @@
 .reporting-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+  padding: 40px;
   text-align: center;
+  background-color: #fafafa;
+  min-height: 100vh;
 }
 
 .reporting-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.reporting-container p {
   margin-bottom: 20px;
 }
 
-.button-group {
-  display: flex;
-  gap: 15px;
+.reporting-container p {
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
-.back-btn {
-  background-color: #007bff;
-  color: white;
+.reporting-container button {
   padding: 10px 20px;
+  margin: 5px;
+  background-color: #43a047;
+  color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.logout-btn {
-  background-color: #dc3545;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
+.reporting-container button:hover {
+  background-color: #388e3c;
 }

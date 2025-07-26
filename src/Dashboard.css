@@ -1,43 +1,98 @@
-.dashboard-container {
+.dashboard {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.dashboard-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.dashboard-container p {
   margin-bottom: 20px;
 }
 
-.button-group {
-  display: flex;
-  gap: 15px;
-}
-
-.report-btn {
-  background-color: #28a745;
+.dashboard-header button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #1976d2;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.logout-btn {
-  background-color: #dc3545;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.dashboard-header button:hover {
+  background-color: #145a9e;
+}
+
+.form-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.form-section button {
+  padding: 8px 16px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #388e3c;
+}
+
+.records-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.records-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.records-section button {
+  margin-left: 5px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.records-section button:first-child {
+  background-color: #ffb300;
+  color: #fff;
+}
+
+.records-section button:first-child:hover {
+  background-color: #ffa000;
+}
+
+.records-section button:last-child {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.records-section button:last-child:hover {
+  background-color: #c62828;
 }

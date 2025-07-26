@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
@@ -7,8 +7,9 @@ function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = e => {
+  const handleLogin = (e) => {
     e.preventDefault();
+    // Add auth logic here
     if (username && password) {
       navigate('/dashboard');
     } else {
@@ -17,25 +18,27 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="login-container">
       <div className="login-box">
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
+        <h2>Login</h2>
+        <form onSubmit={handleLogin}>
           <input
             type="text"
             placeholder="Username"
             value={username}
-            onChange={e => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
+            required
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
+            required
           />
           <button type="submit">Login</button>
+          <button type="button" onClick={() => navigate('/')}>Back to Landing</button>
         </form>
-        <Link to="/" className="back-btn">← Back to Landing</Link>
       </div>
     </div>
   );

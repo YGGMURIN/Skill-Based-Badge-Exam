@@ -1,0 +1,46 @@
+.record-list {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+}
+
+.record-list h3 {
+  margin-bottom: 10px;
+}
+
+.record-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.record-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.actions {
+  margin-top: 6px;
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: #ffc107;
+  color: white;
+}
+
+.actions button:last-child {
+  background: #dc3545;
+  color: white;
+}

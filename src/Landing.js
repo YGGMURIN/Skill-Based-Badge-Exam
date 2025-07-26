@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Landing.css';
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
-    <div className="landing-container">
+    <div className="landing">
       <h1>Welcome to the App</h1>
-      <p>Click below to continue</p>
-      <Link to="/login" className="login-button">Login</Link>
+      <p>This is the landing page of your application.</p>
+      <button onClick={() => navigate('/login')}>Go to Login</button>
     </div>
   );
 }
