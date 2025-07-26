@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  padding: 50px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}

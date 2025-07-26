@@ -1,10 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import './Dashboard.css';
 
 function Dashboard() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/');
+  };
+
   return (
-    <div style={{ padding: 20 }}>
+    <div className="container">
       <h1>Dashboard</h1>
-      <p>This is your dashboard. View <Link to="/reporting">Reporting</Link>.</p>
+      <p>Welcome to your dashboard.</p>
+      <div className="nav-buttons">
+        <Link to="/reporting" className="btn">Go to Reporting</Link>
+        <button onClick={handleLogout} className="btn logout">Logout</button>
+      </div>
     </div>
   );
 }

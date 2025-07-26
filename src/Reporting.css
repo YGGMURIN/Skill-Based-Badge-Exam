@@ -1,0 +1,22 @@
+.container {
+  padding: 40px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.logout {
+  background-color: #dc3545;
+}
