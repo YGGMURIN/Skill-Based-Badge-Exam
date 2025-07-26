@@ -1,18 +1,13 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Login from './Login';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Landing from './Landing';
+import Login from './Login';
 import Dashboard from './Dashboard';
 import Reporting from './Reporting';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <nav style={{ margin: 20 }}>
-        <Link to="/" style={{ marginRight: 10 }}>Landing</Link>
-        <Link to="/login" style={{ marginRight: 10 }}>Login</Link>
-        <Link to="/dashboard" style={{ marginRight: 10 }}>Dashboard</Link>
-        <Link to="/reporting">Reporting</Link>
-      </nav>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
