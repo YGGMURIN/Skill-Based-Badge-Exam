@@ -9,12 +9,12 @@ function Dashboard() {
   };
 
   return (
-    <div className="container">
+    <div className="dashboard-container">
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard.</p>
-      <div className="nav-buttons">
-        <Link to="/reporting" className="btn">Go to Reporting</Link>
-        <button onClick={handleLogout} className="btn logout">Logout</button>
+      <div className="button-group">
+        <Link to="/reporting" className="report-btn">Go to Reporting</Link>
+        <button onClick={handleLogout} className="logout-btn">Logout</button>
       </div>
     </div>
   );
